@@ -18,4 +18,5 @@ class Fundamental(SQLModel, table=True):
     symbol: str = Field(index=True, max_length=10)
     fiscal_year: int
     eps: float
-    book_value: float 
+    book_value: float
+    industry: str | None = Field(default=None) 
